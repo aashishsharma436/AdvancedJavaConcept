@@ -1,0 +1,47 @@
+Solid principles are and Object-Oriented approach that are applied to software structure Design. It has 5 Principles which chnages the way of object -Oriented Programming, which ensures that the software is modular, easy
+to understand, debug and refactor.
+1. Single Responsibilty Principle
+
+
+
+
+
+SINGLE RESPONSIBILTY PRINCIPLE: 
+
+The single responsibilty principle states that every java class must perform a single functionality. Implementation of multifunctanlity in single class mashup the code and if any modification is required may affect the whole class. 
+It is precise the code and the code be easily maintained. 
+
+For Ex:
+ A student class has 3 functionaluities "Add Student", "Calculate Percentage" and "Print Details"
+ so make 3 classes for these functionalities by which all of these functionalities would not mashup and if any of the modification is required, then it will be done easily without interrupting any of the other functionality.
+ 
+ 
+ 
+ 
+ 
+ OPEN CLOSED PRINCIPLE
+ 
+ This principle states that the module should be open for extension but closed for modification. The extension is allowed us to implement new functionality to the module.
+ 
+ Suppose, VehilceInfo is a class and it has the method vehicleNumber() that returns the vehicle number.
+ 
+ 
+ VehicleInfo.java
+  public class VehicleInfo{
+    public double vehicleNumber(vehicle vcl){
+      if (vcl instanceof Car) return vcl.getNumber();
+      if (vcl instanceof Bike)  return vcl.gerNumber();
+    }
+  }
+  
+If we want to add another subclass named Truck, simply we add one more if statement that violates the open-closed principle. The only way to add the subclass and achieve the goal of principle by overriding the VehicleNumber()
+method 
+
+public class Car extends VehicleInfo{
+  public double vehicleNumebr(){  
+    return this.getValue();
+  }
+}
+  
+  
+  
